@@ -44,7 +44,7 @@
         <template slot-scope="scope">
           <span>{{scope.row.phone}}</span>
         </template>
-      </el-table-column>
+      </el-table-column>n
 
       <el-table-column align="center" label="所属部门" show-overflow-tooltip>
         <template slot-scope="scope">

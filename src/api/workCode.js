@@ -2,7 +2,7 @@ import request from '@/router/axios'
 
 export function fetchList(query) {
   return request({
-    url: '/admin/nfcCode/page',
+    url: '/admin/workCode/page',
     method: 'get',
     params: query
   })
@@ -10,7 +10,7 @@ export function fetchList(query) {
 
 export function addObj(obj) {
   return request({
-    url: '/admin/nfcCode/',
+    url: '/admin/workCode/',
     method: 'post',
     data: obj
   })
@@ -18,38 +18,38 @@ export function addObj(obj) {
 
 export function getObj(id) {
   return request({
-    url: '/admin/nfcCode/' + id,
+    url: '/admin/workCode/' + id,
     method: 'get'
   })
 }
 
 export function delObj(id) {
   return request({
-    url: '/admin/nfcCode/' + id,
+    url: '/admin/workCode/' + id,
     method: 'delete'
   })
 }
 
 export function putObj(obj) {
   return request({
-    url: '/admin/nfcCode',
+    url: '/admin/workCode',
     method: 'put',
     data: obj
   })
 }
 
-export function fetchQueryList(query) {
-  return request({
-    url: '/admin/nfcCode/queryPage',
-    method: 'get',
-    data: query
-  })
-}
+// export function fetchQueryList(query) {
+//   return request({
+//     url: '/admin/workCode/queryPage',
+//     method: 'get',
+//     data: query
+//   })
+// }
 
-export function batchAdd(nfcCode) {
+export function batchAdd(workCode) {
   return request({
-    url: '/admin/nfcCode/batchAddition',
+    url: '/admin/workCode/batchAddition',
     method: 'post',
-    data: nfcCode
+    data: workCode
   })
 }
